@@ -9,7 +9,7 @@ employeeRouter.get("/filter",filterByDept)
 employeeRouter.get("/paginate",paginateImplement);
 
 employeeRouter.post("/add", auth, addEmployee)
-employeeRouter.get('/', auth, getEmploye);
+employeeRouter.get('/', getEmploye);
 employeeRouter.put("/:id", auth, editEmployee);
 employeeRouter.delete("/:id", auth, deleteEmployee);
 
